@@ -78,6 +78,8 @@ gem 'simple_form'
 #Adding  will_paginate all by myself -Harrison
 gem 'will_paginate', '>3.0';
 
+gem "font-awesome-rails"
+
 
 
 
