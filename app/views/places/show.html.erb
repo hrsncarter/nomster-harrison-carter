@@ -117,7 +117,7 @@
     <% if photo.caption.present? %>
       <%= photo.caption %>
     <% end %>
-    <%= image_tag 'photo.picture.url', class: 'img-fluid' %>
+    <%= image_tag photo.picture.url, class: 'img-fluid' %>
   </div>
 <% end %>
   
