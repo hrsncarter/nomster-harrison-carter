@@ -23,5 +23,17 @@
     </div>
 <% end %>
 
+<% if place.photos.present? %>
+   <div class="col-12">
+      <blockquote>
+        <% if place.photos.last.present? %>
+          <%= place.photos.last %>
+        <% end %>
+        <%= place.photos.last %>
+        <small><%= place.photos.last.user.email %></small>
+      </blockquote>
+    </div>
+<% end %>
+
  </div>
 <% end %>
