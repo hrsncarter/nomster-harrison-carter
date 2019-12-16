@@ -25,13 +25,9 @@
 
 <% if place.photos.present? %>
    <div class="col-12">
-      <blockquote>
         <% if place.photos.last.present? %>
-          <%= place.photos.last %>
+          <%= image_tag place.photos.last.picture.url, class: 'img-fluid' %>
         <% end %>
-        <%= place.photos.last %>
-        <small><%= place.photos.last.user.email %></small>
-      </blockquote>
     </div>
 <% end %>
 
